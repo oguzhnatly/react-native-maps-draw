@@ -27,6 +27,7 @@ export default (props: TMap) => {
     fillColorCanvas = DEFAULT_FILL_BACKGROUND_CANVAS,
     styleViewGesture,
     backgroundCanvas = DEFAULT_BACKGROUND_VIEW_CANVAS,
+    allowMultiTouch = false,
   } = props;
   const { width, height } = useWindowDimensions();
   const [containerSize, setContainerSize] = useState({ width, height });
@@ -101,6 +102,7 @@ export default (props: TMap) => {
         onEndTouchEvents={handleEndDraw}
         onStartTouchEvents={onStartDraw}
         onChangeTouchEvents={onChangePoints}
+        allowMultiTouch={allowMultiTouch}
       />
     </View>
   );

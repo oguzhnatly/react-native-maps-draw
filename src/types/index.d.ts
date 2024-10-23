@@ -35,6 +35,7 @@ export type TGestureControlShape = {
 };
 export type TGestureControl = {
   onChangeTouchEvents: (points: TouchPoint[]) => void;
+  allowMultiTouch?: boolean;
 } & TGestureControlShape;
 
 export type TPolygon = {
@@ -75,4 +76,5 @@ export type TMap = {
   fillColorCanvas?: string;
   backgroundCanvas?: string;
   styleViewGesture?: StyleProp<ViewStyle>;
+  allowMultiTouch?: boolean;
 };

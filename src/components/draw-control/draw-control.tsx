@@ -14,6 +14,7 @@ const DrawControl: FC<IDrawControl> = ({
   onEndTouchEvents,
   onStartTouchEvents,
   onChangeTouchEvents,
+  allowMultiTouch,
   ...rest
 }) => {
   return (
@@ -22,6 +23,7 @@ const DrawControl: FC<IDrawControl> = ({
         onEndTouchEvents={onEndTouchEvents}
         onStartTouchEvents={onStartTouchEvents}
         onChangeTouchEvents={onChangeTouchEvents}
+        allowMultiTouch={allowMultiTouch}
       />
 
       <Canvas
